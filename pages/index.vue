@@ -193,9 +193,11 @@ export default {
           client.dateFormated = moment(client.date).format('DD/MM/YYYY')
         })
         this.clients = response
+        this.change = false
         this.loading = false
       } catch (error) {
         console.log(error)
+        this.change = false
         this.loading = false
       }
     },
