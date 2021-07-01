@@ -50,7 +50,13 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://tryio-test-api.herokuapp.com/api'
+    baseURL: 'https://tryio-test-api.herokuapp.com/api',
+    headers: {
+      common: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'true'
+      }
+    }
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
