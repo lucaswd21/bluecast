@@ -50,7 +50,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:4000/api'
+    baseURL: 'https://tryio-test-api.herokuapp.com/api'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
