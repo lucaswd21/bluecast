@@ -139,7 +139,6 @@
 
 </template>
 <script>
-import moment from 'moment'
 import NewClientModal from '~/components/newClientModal'
 
 export default {
@@ -190,7 +189,9 @@ export default {
       try {
         const response = await this.$axios.$get('/client')
         response.forEach((client) => {
-          client.dateFormated = moment(client.date).format('DD/MM/YYYY')
+          client.dateFormated = client.date
+          client.date = client.date.substr(6) + client.date.substr(3, 2) + client.date.substr(0, 2)
+          console.log(client.date)
         })
         this.clients = response
         this.change = false

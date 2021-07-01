@@ -50,7 +50,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://tryio-test-api.herokuapp.com/api',
+    baseURL: 'http://localhost:4000/api',
     headers: {
       common: {
         'Content-Type': 'application/json',

@@ -52,7 +52,6 @@
       v-spacer
 </template>
 <script>
-import moment from 'moment'
 
 export default {
   props: {
@@ -87,8 +86,6 @@ export default {
 
     async save () {
       this.loading = true
-      this.editedClient.date = moment(this.editedClient.date).format('YYYY-MM-DD')
-      this.editedClient.value = parseFloat(this.editedClient.value)
       try {
         await this.$axios.$post('/client', {
           name: this.editedClient.name,
