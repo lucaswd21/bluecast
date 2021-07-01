@@ -56,7 +56,7 @@
                 v-card-text
                   v-layout.align-center.justify-center.wrap
                     v-flex.xs5.sm5.md4
-                      v-avatar(size="15vh" color="grey darken-1")
+                      v-avatar(size="15vh" color="grey lighthen-1")
                         v-icon(color="grey darken-3" style="font-size: 10vh;") mdi-account
                     v-flex.xs7.sm7.md8
                       p.body-2
