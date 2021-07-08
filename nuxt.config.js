@@ -73,7 +73,7 @@ export default {
       dark: false,
       themes: {
         light: {
-          primary: colors.orange.darken1,
+          primary: colors.blue.darken1,
         },
         dark: {
           primary: colors.orange.darken1,

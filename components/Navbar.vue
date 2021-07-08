@@ -7,6 +7,6 @@
       style="z-index: 9999;"
     )
       v-spacer(class="hidden-md-and-up")
-      img(src="~/static/logo.png" width="150vh")
+      span.title Bluecast
       v-spacer
 </template>
